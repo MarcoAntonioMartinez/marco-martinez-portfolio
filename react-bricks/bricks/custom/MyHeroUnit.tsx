@@ -65,6 +65,12 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({
             types.RichTextFeatures.Code,
             types.RichTextFeatures.Link,
           ]}
+
+          renderHighlight={({ children }) => (
+          <span className="px-1 rounded bg-blue-200 text-green-900">
+            {children}
+          </span>
+          )}
           renderCode={(props) => (
             <code className="text-sm py-1 px-2 bg-gray-200 dark:bg-gray-700 rounded-sm">
               {props.children}
@@ -97,6 +103,7 @@ MyHeroUnit.schema = {
     padding: 'big',
     title: 'This is a custom Hero Unit',
     text: "We are a hi-tech web development company committed to deliver great products on time. We love to understand our customers' needs and exceed expectations.",
+    // highlightColor: HighlightColor,
   }),
   sideEditProps: [
     {
