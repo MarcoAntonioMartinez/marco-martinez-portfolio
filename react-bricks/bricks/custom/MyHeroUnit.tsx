@@ -32,9 +32,9 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({
           propName="icon"
           source={icon}
           alt="Icon"
-          maxWidth={80}
+          maxWidth={1200}
           aspectRatio={1}
-          imageClassName="w-20 mb-5 mx-auto"
+          imageClassName="w-1200 mb-5 mx-auto"
         />
         <Text
           propName="title"
@@ -48,6 +48,13 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({
             <span className="opacity-30">{props.children}</span>
           )}
           placeholder="Type a title..."
+          
+          
+          // renderHighlight={( props ) => (
+          // <span className="px-1 rounded bg-blue-200 text-green-900">
+          //   {props.children}
+          // </span>
+          // )}
         />
         <RichText
           propName="text"
