@@ -28,14 +28,16 @@ const MyHeroUnit: types.Brick<HeroUnitProps> = ({
           padding === 'big' ? 'py-20' : 'py-12'
         }`}
       >
-        <Image
+        
+        <Image 
           propName="icon"
           source={icon}
           alt="Icon"
           maxWidth={1200}
           aspectRatio={1}
-          imageClassName="w-1200 mb-5 mx-auto"
+          imageClassName="w-1200 mb-5 mr-0 ml-0 p-0 mx-auto "
         />
+        
         <Text
           propName="title"
           value={title}
@@ -125,6 +127,13 @@ MyHeroUnit.schema = {
         ],
       },
     },
+    // {
+    // name: 'bgColor',
+    // label: 'Background Color',
+    // type: types.SidePropType.Color,
+
+    // default: { color: '#1f2937', className: 'bg-gray-900'},
+    // },
   ],
 }
 
