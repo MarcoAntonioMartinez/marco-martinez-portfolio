@@ -15,7 +15,7 @@ export default function AdminLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`dark:bg-gray-900`}>
+      <body className="dark:bg-gray-900">
         <ThemeProvider
           attribute="class"
           storageKey="color-mode"
