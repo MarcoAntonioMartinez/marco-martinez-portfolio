@@ -35,7 +35,7 @@
     "@types/jsonp": "^0.2.3",
     "@types/node": "^20",
     "@types/prismjs": "^1.26.5",
-    "@types/react": "19.0.10",
+    "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@types/react-slick": "^0.23.13",
     "eslint": "^9.22.0",
