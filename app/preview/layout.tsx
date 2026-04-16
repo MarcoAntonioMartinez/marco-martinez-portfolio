@@ -69,16 +69,13 @@ const getData = async (
   }
 }
 
-export default async function Layout(props: {
-  children: React.ReactNode
-  params: Promise<{ lang: string }>
-}) {
-  const params = await props.params
+export default async function Layout(props: { children: React.ReactNode }) {
+  const lang = 'en'
 
   const { children } = props
 
   const { header, footer, errorNoKeys, errorHeader, errorFooter } =
-    await getData(params.lang)
+    await getData(lang)
 
   // Clean the received content
   // Removes unknown or not allowed bricks
@@ -91,7 +88,7 @@ export default async function Layout(props: {
     : null
 
   return (
-    <html lang={params.lang} suppressHydrationWarning>
+    <html lang={lang} suppressHydrationWarning>
       <body className={`bg-white dark:bg-[#0d1117]`}>
         <ThemeProvider
           attribute="class"
