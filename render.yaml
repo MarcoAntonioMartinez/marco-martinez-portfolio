@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: marco-martinez-portfolio # the name of this service, eg your app name
+    env: static 
+    buildCommand: "./bin/render-build.sh" # we already created these two files for you
+    startCommand: "./bin/render-start.sh"
